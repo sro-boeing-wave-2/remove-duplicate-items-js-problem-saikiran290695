@@ -3,9 +3,6 @@
  * @param {Array} items
  * @returns {Array}
  */
-const removeDuplicateItems = (items) => {
-  const distinctSet = new Set(items); // pick unique elements of array
-  return (Array.from(distinctSet)); //  send response in array format
-};
+const removeDuplicateItems = i => (Array.from(new Set(i))); //  send response in array format
 
 module.exports = removeDuplicateItems;
